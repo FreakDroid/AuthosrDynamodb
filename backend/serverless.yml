@@ -1,0 +1,17 @@
+list:
+  handler: backend/authorCrud.list
+  events:
+    - http: get /authors
+
+get:
+  handler: backend/authorCrud.get
+  events:
+    - http:
+        path: authors/{id}
+        method: get
+
+create:
+  handler: backend/authorCrud.create
+  events:
+    - http: post /authors
+

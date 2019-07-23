@@ -1,0 +1,22 @@
+{
+  "name": "authorspostdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sls": "serverless",
+    "start": "sls dynamodb install && sls offline start && sls dynamodb migrate ",
+    "prepare_local": "sls dynamodb install && sls dynamodb migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.496.0",
+    "serverless-dynamodb-local": "^0.2.38",
+    "serverless-offline": "^5.8.0"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}
